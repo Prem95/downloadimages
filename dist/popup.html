@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Downloader</title>
+  <style>
+    body { width: 300px; padding: 10px; font-family: Arial, sans-serif; }
+    #progressBar { width: 100%; height: 20px; background-color: #f0f0f0; margin-bottom: 10px; }
+    #progressBar div { height: 100%; width: 0; background-color: #4CAF50; transition: width 0.5s; }
+    button { margin-top: 10px; width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:disabled { background-color: #cccccc; cursor: not-allowed; }
+    #status { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Image Downloader</h2>
+  <div id="progressBar"><div></div></div>
+  <button id="downloadButton">Download Images CSV</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
